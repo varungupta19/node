@@ -17,5 +17,5 @@ jobs:
    - run: npm build
    
    - store_artifacts:               
-          path: /repo/
+          path: /repo/dist
    
