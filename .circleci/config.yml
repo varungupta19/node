@@ -3,7 +3,7 @@ jobs:
  build: 
   docker: 
    - image: circleci/node:7.10 
-  working_directory: ~/repo
+  working_directory: ~/Application
   steps:
    - checkout 
    
@@ -17,5 +17,5 @@ jobs:
    - run: npm build
    
    - store_artifacts:               
-          path: /repo/dist
+          path: /Application/dist
    
