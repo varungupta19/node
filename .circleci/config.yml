@@ -3,7 +3,7 @@ jobs:
  build: 
   docker: 
    - image: circleci/node:7.10 
-  working_directory: ~/Application
+  working_directory: ~/repo
   steps:
    - checkout 
    
@@ -12,9 +12,9 @@ jobs:
    - save_cache:
       paths:
        - node_modules
-      key : v1-dependencies-{{checksum "Application/package.json"}} 
+      key : v1-dependencies-{{checksum "/Application/package.json"}} 
 
    - run: npm build
    
    - store_artifacts:               
-          path: /Application
+          path: /repo/
