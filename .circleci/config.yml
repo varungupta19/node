@@ -18,4 +18,4 @@ jobs:
    
    - store_artifacts:               
           path: /Application/dist
-   
+          destination: artifact-file
