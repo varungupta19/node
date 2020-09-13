@@ -22,6 +22,5 @@ jobs:
             - v1-dependencies-      
 
    - run: npm build
-   
    - store_artifacts:               
-          path: /
+          path: /repo/build
